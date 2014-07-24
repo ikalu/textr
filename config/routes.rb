@@ -1,4 +1,5 @@
 require "monban/constraints/signed_in"
+
 Rails.application.routes.draw do
   constraints Monban::Constraints::SignedIn.new do
         root "dashboards#show", as: :dashboard
