@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create]
   resources :messages, only: [:new, :create]
+  post "/send_sms" => "twilio#send_sms"
 end
