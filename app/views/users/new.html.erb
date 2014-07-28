@@ -1,14 +1,15 @@
 <%= form_for @user do |form| %>
   <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, placeholder: "Email" %>
   </div>
   <div>
-    <%= form.label :phone %>
-    <%= form.telephone_field :phone %>
+<<<<<<< HEAD
+    <%= form.phone_field :phone, placeholder: "Phone Number" %>
+=======
+    <%= form.telephone_field :phone, placeholder: "Phone" %>
+>>>>>>> 11206efec7196b739f6d18ad7db0ce58116ddc05
   <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+    <%= form.password_field :password, placeholder: "Password" %>
   </div>
   <div>
     <%= form.submit "Sign up" %>

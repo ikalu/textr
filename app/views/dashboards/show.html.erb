@@ -1,1 +1,12 @@
-Welcome <%= current_user.email %>
+<h4>Welcome <%= current_user.email %>
+<<<<<<< HEAD
+  <div>
+    <%= link_to "New Message", new_message_path %>
+  </div>
+  <div>
+    <% @client.account.messages.list({ }).each do |message| %>
+      <%= puts message.body %>
+    <%end%>
+  </div>
+=======
+>>>>>>> 11206efec7196b739f6d18ad7db0ce58116ddc05

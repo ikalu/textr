@@ -1,0 +1,7 @@
+<h1>New Message</h1>
+<%= form_for @message do |form| %>
+  <%= form.phone_field :receiver, placeholder: "type number" %><br />
+  <%= form.text_area :body, placeholder: "type message here" %><br />
+  <%= form.submit "Send Message" %>
+<% end %>
+

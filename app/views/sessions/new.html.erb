@@ -1,11 +1,13 @@
 <%= form_for :session, url: session_path do |form| %>
   <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
+<<<<<<< HEAD
+    <%= form.phone_field :phone, placeholder: "Phone Number" %>
+=======
+    <%= form.telephone_field :phone, placeholder: "Phone" %>
+>>>>>>> 11206efec7196b739f6d18ad7db0ce58116ddc05
   </div>
   <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+    <%= form.password_field :password, placeholder: "Password" %>
   </div>
   <div>
     <%= form.submit "Sign in" %>
